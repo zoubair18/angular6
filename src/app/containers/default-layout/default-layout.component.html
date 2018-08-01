@@ -1,0 +1,132 @@
+<app-header
+  [fixed]="true"
+  [navbarBrandFull]="{src: 'assets/img/brand/logo.png', width: 100, height: 39, alt: 'Logo'}"
+  [navbarBrandMinimized]="{src: 'assets/img/brand/logo.png', width: 40, height: 40, alt: 'Logo'}"
+  [sidebarToggler]="'lg'"
+  [asideMenuToggler]="'lg'">
+
+  <ul class="nav navbar-nav ml-auto">
+
+
+
+  </ul>
+</app-header>
+<div class="app-body">
+  <app-sidebar [fixed]="true" [display]="'lg'">
+    <app-sidebar-nav [navItems]="navItems" [perfectScrollbar] [disabled]="sidebarMinimized"></app-sidebar-nav>
+    <app-sidebar-minimizer></app-sidebar-minimizer>
+  </app-sidebar>
+  <!-- Main content -->
+  <main class="main">
+    <!-- Breadcrumb -->
+    <br> <br> <br>
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div><!-- /.container-fluid -->
+  </main>
+  <app-aside [fixed]="true" [display]="false">
+
+        <div class="list-group list-group-accent">
+          <div class="list-group-item list-group-item-accent-secondary bg-light text-center font-weight-bold text-muted text-uppercase small"></div>
+          <div class="list-group-item list-group-item-accent-warning list-group-item-divider">
+            <div class="avatar float-left">
+              <img class="img-avatar" src="assets/img/avatars/149071.svg" alt="admin@bootstrapmaster.com">
+            </div>
+            <div>
+              <span class="badge badge-default "> Youssef.akermoum</span>
+              <br>
+            </div>
+         <br>
+            <small class="text-muted mr-2">
+              <i class="icon-info"></i> Dernière connexion:</small>
+            <small class="text-muted">
+              29 juin 12:07</small>
+
+          </div>
+          <!--   <div class="list-group-item list-group-item-accent-info">
+             <div class="avatar float-right">
+               <img class="img-avatar" src="assets/img/avatars/4.jpg" alt="admin@bootstrapmaster.com">
+             </div>
+             <div>Skype with
+               <strong>Megan</strong>
+             </div>
+             <small class="text-muted mr-3">
+               <i class="icon-calendar"></i>  4 - 5pm</small>
+             <small class="text-muted">
+               <i class="icon-social-skype"></i>  On-line</small>
+           </div>
+         <div class="list-group-item list-group-item-accent-secondary bg-light text-center font-weight-bold text-muted text-uppercase small">Tomorrow</div>
+           <div class="list-group-item list-group-item-accent-danger list-group-item-divider">
+             <div>New UI Project -
+               <strong>deadline</strong>
+             </div>
+             <small class="text-muted mr-3">
+               <i class="icon-calendar"></i>  10 - 11pm</small>
+             <small class="text-muted">
+               <i class="icon-home"></i>  creativeLabs HQ</small>
+             <div class="avatars-stack mt-2">
+               <div class="avatar avatar-xs">
+                 <img class="img-avatar" src="assets/img/avatars/2.jpg" alt="admin@bootstrapmaster.com">
+               </div>
+               <div class="avatar avatar-xs">
+                 <img class="img-avatar" src="assets/img/avatars/3.jpg" alt="admin@bootstrapmaster.com">
+               </div>
+               <div class="avatar avatar-xs">
+                 <img class="img-avatar" src="assets/img/avatars/4.jpg" alt="admin@bootstrapmaster.com">
+               </div>
+               <div class="avatar avatar-xs">
+                 <img class="img-avatar" src="assets/img/avatars/5.jpg" alt="admin@bootstrapmaster.com">
+               </div>
+               <div class="avatar avatar-xs">
+                 <img class="img-avatar" src="assets/img/avatars/6.jpg" alt="admin@bootstrapmaster.com">
+               </div>
+             </div>
+           </div>
+           <div class="list-group-item list-group-item-accent-success list-group-item-divider">
+             <div>
+               <strong>#10 Startups.Garden</strong> Meetup</div>
+             <small class="text-muted mr-3">
+               <i class="icon-calendar"></i>  1 - 3pm</small>
+             <small class="text-muted">
+               <i class="icon-location-pin"></i>  Palo Alto, CA</small>
+           </div>
+           <div class="list-group-item list-group-item-accent-primary list-group-item-divider">
+             <div>
+               <strong>Team meeting</strong>
+             </div>
+             <small class="text-muted mr-3">
+               <i class="icon-calendar"></i>  4 - 6pm</small>
+             <small class="text-muted">
+               <i class="icon-home"></i>  creativeLabs HQ</small>
+             <div class="avatars-stack mt-2">
+               <div class="avatar avatar-xs">
+                 <img class="img-avatar" src="assets/img/avatars/2.jpg" alt="admin@bootstrapmaster.com">
+               </div>
+               <div class="avatar avatar-xs">
+                 <img class="img-avatar" src="assets/img/avatars/3.jpg" alt="admin@bootstrapmaster.com">
+               </div>
+               <div class="avatar avatar-xs">
+                 <img class="img-avatar" src="assets/img/avatars/4.jpg" alt="admin@bootstrapmaster.com">
+               </div>
+               <div class="avatar avatar-xs">
+                 <img class="img-avatar" src="assets/img/avatars/5.jpg" alt="admin@bootstrapmaster.com">
+               </div>
+               <div class="avatar avatar-xs">
+                 <img class="img-avatar" src="assets/img/avatars/6.jpg" alt="admin@bootstrapmaster.com">
+               </div>
+               <div class="avatar avatar-xs">
+                 <img class="img-avatar" src="assets/img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
+               </div>
+               <div class="avatar avatar-xs">
+                 <img class="img-avatar" src="assets/img/avatars/8.jpg" alt="admin@bootstrapmaster.com">
+               </div>
+             </div>
+           </div>-->
+        </div>
+
+  </app-aside>
+</div>
+<!--<app-footer>
+  <span><a href="https://coreui.io">CoreUI</a> &copy; 2018 creativeLabs.</span>
+  <span class="ml-auto">Powered by <a href="https://coreui.io/angular">CoreUI for Angular</a></span>
+</app-footer>-->

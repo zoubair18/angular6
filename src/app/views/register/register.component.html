@@ -1,0 +1,53 @@
+<div class="app-body">
+  <main class="main d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card mx-4">
+            <div class="card-body p-4 text-center">
+              <img class="img-fluid" src="./assets/img/brand/logo.png">
+              <br>
+              <br>
+              <h4 class="text-center">Bienvenue chez robbin</h4>
+              <br>
+              <form (ngSubmit)="processForm()">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">@</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Email" name="email" [(ngModel)]="user.email">
+                </div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="icon-lock"></i>
+                    </span>
+                  </div>
+                  <input type="password" class="form-control" placeholder="Password" name="password" [(ngModel)]="user.password">
+                </div>
+                <div class="input-group mb-4">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="icon-calendar"></i>
+                    </span>
+                  </div>
+                  <input type="text" id="input1-group3" name="input1-group3" class="form-control" placeholder="Date de naissance" [(ngModel)]="user.birthday">
+                </div>
+
+                <div class="form-group row">
+                  <div class="col-md-9 col-form-label">
+                    <div class="form-check">
+                      <input class="form-check-input" id="check1" type="checkbox" value="" required>
+                      <label class="form-check-label" for="check1">J'accepte les CG Robbin1</label>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-block btn-success">Créer mon compte</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
